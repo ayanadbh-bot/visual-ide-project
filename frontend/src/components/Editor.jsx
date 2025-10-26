@@ -143,6 +143,7 @@ import ArrayNode from './CustomNodes/ArrayNode';
 import FunctionDefineNode from './CustomNodes/FunctionDefineNode';
 import FunctionCallNode from './CustomNodes/FunctionCallNode';
 
+import ChatbotWidget from './ChatbotWidget';
 
 const initialNodes = [
     { id: 'start', type: 'input', data: { label: 'Start' }, position: { x: 250, y: 5 }, deletable: false },
@@ -242,6 +243,8 @@ const Editor = () => {
             edges={edges} 
         />
       </ReactFlowProvider>
+
+      <ChatbotWidget /> {/* <-- 2. RENDER IT HERE */}
     </div>
   );
 };
